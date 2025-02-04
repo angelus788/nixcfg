@@ -61,10 +61,54 @@
   environment.systemPackages = with pkgs; [
     #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     #  wget
-    neovim
-    git
+    
+    brave
+  	bitwarden-cli
+	bitwarden-desktop
+  brave
+	chromium
+	dig
+	docker-compose
+  ente-auth
+	fastfetch
+	fish
+	fprintd
+	firefox 
+  ghostty
+	gimp 
+	git 
+	gitFull
+	git-crypt
+	github-desktop
+	gnome-extension-manager
+  gnome-tweaks
+	librewolf
+	mullvad-vpn
+  nixd
+	obsidian 
+	podman
+	podman-compose
+	spotify
+	steam
+	syncthing 
+	tailscale
+	thunderbird
+	variety 
+	vivaldi 
+	vlc 
+	vscode 
+	wget 
   ];
+  # Install firefox.
+  programs.firefox.enable = true;
 
+  # Enables the 1Password desktop and cli apps
+  programs._1password = { enable = true; }; 
+  programs._1password-gui = {
+  enable = true;
+  # this makes system auth etc. work properly
+  polkitPolicyOwners = [ "angelus" ];
+};
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
@@ -82,10 +126,13 @@
     allowSFTP = true;
   };
 
-  programs.hyprland = {
-    enable = true;
-    xwayland.enable = true;
-  };
+  # Enable the X11 windowing system.
+  services.xserver.enable = true;
+
+  # Enable the GNOME Desktop Environment.
+  services.xserver.displayManager.gdm.enable = true;
+  services.xserver.desktopManager.gnome.enable = true;
+
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
   # networking.firewall.allowedUDPPorts = [ ... ];
