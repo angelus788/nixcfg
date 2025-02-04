@@ -69,12 +69,12 @@
 	chromium
 	dig
 	docker-compose
-  ente-auth
+  #ente-auth
 	fastfetch
 	fish
 	fprintd
 	firefox 
-  ghostty
+  #ghostty
 	gimp 
 	git 
 	gitFull
