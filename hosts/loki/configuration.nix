@@ -81,7 +81,7 @@
 	git-crypt
 	github-desktop
 	gnome-extension-manager
-  gnome-tweaks
+  #gnome-tweaks
 	librewolf
 	mullvad-vpn
   nixd
