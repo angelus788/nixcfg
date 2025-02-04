@@ -98,7 +98,7 @@
 	gitFull
 	git-crypt
 	github-desktop
-	gnome-extension-manager
+	#gnome-extension-manager
   #gnome-tweaks
 	librewolf
 	mullvad-vpn
