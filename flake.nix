@@ -39,7 +39,7 @@
       };
     };
     homeConfigurations = {
-      "angelus@angelus" = home-manager.lib.homeManagerConfiguration {
+      "angelus@loki" = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages."x86_64-linux";
         extraSpecialArgs = {inherit inputs outputs;};
         modules = [./home/angelus/loki.nix];
