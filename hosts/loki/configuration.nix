@@ -63,14 +63,6 @@
   #Tailscale
   services.tailscale.enable = true;
 
-  # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.angelus = {
-    isNormalUser = true;
-    description = "angelus";
-    extraGroups = ["networkmanager" "wheel"];
-    packages = with pkgs; [];
-  };
-
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
@@ -82,40 +74,40 @@
     
     brave
   	bitwarden-cli
-	bitwarden-desktop
-  brave
-	chromium
-	dig
-	docker-compose
-  #ente-auth
-	fastfetch
-	fish
-	fprintd
-	firefox 
-  #ghostty
-	gimp 
-	git 
-	gitFull
-	git-crypt
-	github-desktop
-	#gnome-extension-manager
-  #gnome-tweaks
-	librewolf
-	mullvad-vpn
-  nixd
-	obsidian 
-	podman
-	podman-compose
-	spotify
-	steam
-	syncthing 
-	tailscale
-	thunderbird
-	variety 
-	vivaldi 
-	vlc 
-	vscode 
-	wget 
+    bitwarden-desktop
+    brave
+    chromium
+    dig
+    docker-compose
+    #ente-auth
+    fastfetch
+    fish
+    fprintd
+    firefox 
+    #ghostty
+    gimp 
+    git 
+    gitFull
+    git-crypt
+    github-desktop
+    #gnome-extension-manager
+    #gnome-tweaks
+    librewolf
+    mullvad-vpn
+    nixd
+    obsidian 
+    podman
+    podman-compose
+    spotify
+    steam
+    syncthing 
+    tailscale
+    thunderbird
+    variety 
+    vivaldi 
+    vlc 
+    vscode 
+    wget 
   ];
   # Install firefox.
   programs.firefox.enable = true;

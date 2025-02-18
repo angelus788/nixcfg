@@ -5,6 +5,7 @@
   outputs,
   ...
 }: {
+  imports = [./users];
   nixpkgs = {
     # You can add overlays here
     overlays = [
