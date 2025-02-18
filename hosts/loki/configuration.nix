@@ -135,7 +135,8 @@
     settings.PermitRootLogin = "no";
     allowSFTP = true;
   };
-
+ 
+  program.fish.enable = true;
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
