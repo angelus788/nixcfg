@@ -27,11 +27,11 @@ inputs,
       "video"
       "wheel"
       "wireshark"  
-    "networkmanager" 
+      "networkmanager" 
     ];
 
     openssh.authorizedKeys.keys = [
-        ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGZZb2c2tajrB4b6knZgjDU+JXiWWeL+Ja/AxdyFre78
+        "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGZZb2c2tajrB4b6knZgjDU+JXiWWeL+Ja/AxdyFre78"
       ];
     packages = [inputs.home-manager.packages.${pkgs.sytem}.default];
   };
