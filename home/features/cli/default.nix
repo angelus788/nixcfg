@@ -16,7 +16,7 @@ programs.eza = {
 };
 
 #repaclement for cat cmd
-progams.bat = {enable = true;};
+programs.bat = {enable = true;};
 
 home.packages = with pkgs; [
   coreutils
