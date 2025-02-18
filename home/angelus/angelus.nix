@@ -36,6 +36,6 @@ inputs,
     packages = [inputs.home-manager.packages.${pkgs.sytem}.default];
   };
     home-manager.users.angelus =
-      import angelus/${config.networking.hostname}.nix;
+      import ../../../home/angelus/${config.networking.hostname}.nix;
 
 }
