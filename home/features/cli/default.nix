@@ -11,7 +11,7 @@ programs.zoxide = {
 programs.eza = {
   enable = true;
   enableFishIntegration = true;
-  enableBashInegration = true;
+  enableBashIntegration = true;
   extraOptions = ["-l" "--icons" "--git" "-a"];
 };
 
