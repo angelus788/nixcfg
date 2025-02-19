@@ -1,6 +1,7 @@
 { config, ... }: { 
   imports = [ 
     ../features/cli 
+    ..features/desktop
     ../common 
     ./home.nix
   ];
