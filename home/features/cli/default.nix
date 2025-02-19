@@ -1,5 +1,11 @@
 {pkgs, ...}: {
 
+imports = [
+./fish.nix
+./fzf.nix
+./neofetch.nix
+];
+
 #allows to quickly move between dirs
 programs.zoxide = {
   enable = true;
