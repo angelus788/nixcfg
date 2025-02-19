@@ -4,6 +4,7 @@
     ../features/desktop
     ../common 
     ./home.nix
+    ./dotfiles
   ];
 
   features = {

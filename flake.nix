@@ -11,11 +11,16 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-24.11";
     deploy-rs.url = "github:serokell/deploy-rs";
+     dotfiles = {
+      url = "git+https://code.m3tam3re.com/m3tam3re/dotfiles-flake-demo.git";
+      flake = false;
+    };
   };
 
   outputs = {
     self,
     home-manager,
+    dotfiles,
     nixpkgs,
     ...
   } @ inputs: let
