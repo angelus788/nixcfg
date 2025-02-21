@@ -10,7 +10,11 @@
     };
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-24.11";
+
+    agenix.url = "github:ryantm/agenix";
+
     deploy-rs.url = "github:serokell/deploy-rs";
+
     disko = {
       url = "github:nix-community/disko";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -24,6 +28,7 @@
 
   outputs = {
     self,
+    agenix,
     home-manager,
     dotfiles,
     nixpkgs,
@@ -49,7 +54,7 @@
         modules = [
           ./hosts/loki
           inputs.disko.nixosModules.disko
-
+          agenix.nixosModules.default
           ];
       };
     };
